@@ -1,0 +1,154 @@
+/*
+ Theme Name:   Second NU Branding SoC IT / NU Global Branding
+ Theme URI:    http://www.northwestern.edu/brand
+ Description:  Second Design. Closer to NUGM. Less extensions. Extends NU Global Branding theme first created by Alex Miner in Academic Research and Technology.
+ Author:       Richard for SoCIT
+ Author URI:   http://communication.northwestern.edu
+ Template:     northwestern-global-marketing-wordpress-theme
+*/
+
+
+
+/* 
+Fix font awesome on the client side
+*/
+body .content i.fa {
+    font-family: FontAwesome;
+}
+
+/* Class to sticky the top. THis class is added via other mechanisms */
+.fixed_to_top_admin {
+    position: fixed;
+    width:100%;
+    top: 32px;
+    z-index: 999999;
+}
+
+.fixed_to_top {
+    position: fixed;
+    width:100%;
+    top: 0px;
+    z-index: 999999;
+}
+
+
+
+/* Make bg white */
+body #nu,
+body nav#top-nav  {
+    background-color: white;
+}
+
+
+/* PUrple bar size*/
+body #nu #top-bar {
+    height: 40px;
+    min-height: 40px;
+}
+
+/* WHite space size*/
+body #nu .bottom-bar {
+    clear: both;
+    float: none;
+}
+body #nu .bottom-bar #department {
+    height: 70px;
+}
+
+/* Hide Main NU Logo */
+body #nu #top-bar #left img {
+    visibility: hidden;
+    left: -999px;
+    position: absolute;
+}
+
+
+/* Footer Color */
+body footer {
+    background-color: #444444;
+}
+
+
+/*
+/* colorized search icon */
+body #mobile-nav-link {
+    background-image: url('img/hamburger_purple.png');
+}
+
+/* purple search icon */
+#mobile-links .mobile-search-link {
+    background-image: url('img/search_purple.png');
+}
+
+/* white X on mobile menu */
+.mobile-link.mobile-search-link.open {
+    background: #4e2a84 url(https://common.northwestern.edu/v8/css/images/icons/alert-x-white-home.svg) no-repeat center !important;
+    background-size: 20px 20px !important;
+}
+
+.mobile-link.mobile-nav-link.open {
+    background: #fff url(https://common.northwestern.edu/v8/css/images/icons/close-button-dkpurple.svg) no-repeat center !important;
+    background-size: 20px 20px !important;
+}
+
+
+/* Purple Menu */
+body #top-bar #right {
+    margin-top: 13px;
+}
+body #purple_school_menu li a
+{
+    font-family: 'Akkurat Pro Regular',Arial,sans-serif !important;
+    font-size: 10pt;
+}
+
+
+/* Space around main content. Really seen with responsive or narrow views */
+@media (max-width: 401px) {
+    #main-content {
+        border: 10px solid transparent;
+    }
+}
+
+/* Search form text color  */
+body form input#q {
+    color: grey !important;
+}
+
+
+/* Fix Photo features */
+.contain-1120 .feature-two-col article {
+    margin: 3px !important;
+}
+.photo-feature-3-across {
+    clear: both;
+
+}
+.photo-feature-3-across article {
+    float: left;
+    width: 31%;
+}
+
+
+
+/*
+STATS CALL OUT
+*/
+.stats-callout {
+    display: table;
+    width: 100%;
+}
+.stats-callout div {
+    display: table-cell;
+}
+.center-list {
+    text-align: center;
+}
+
+
+/*
+SEARCH BUTTON CORRECTION
+*/
+body #search .search-form button {
+    background-image: url('img/search.svg');
+}
